@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Repülő Iskola - bemutató játék</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="container game">
+			<div class="info">
+				<h1 class="header">Segítség</h1>
+				<p class="whos" style="font-weight:bold"></p>
+				<p class="move"></p>
+				<button class="repeat" onclick="game.reset()" >Új játék</button>
+			</div>
+			<div class="status">
+			    
+			</div>
+			<div class="board">
+				<div style="text-align:left;" id ="pileOne" class="pile pileOne"></div>
+				<div style="text-align:left;" id ="pileTwo" class="pile pileTwo"></div>
+			</div>
+			
+		</div>
+		<script src="pubSub.js"></script>
+		<script src="nim.js"></script>
+		<script src="nimAi.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
